@@ -2,7 +2,7 @@
  * MAIN CONFIGURATION FILE
  * 
  * English and French comments
- * Commentaires anglais et français
+ * Commentaires anglais et franÃ§ais
  * 
  * (EN)
  * This file contains the configuration variables of the logistics system.
@@ -12,10 +12,10 @@
  *                  CfgVehicles tree view example : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
  * 
  * (FR)
- * Fichier contenant les variables de configuration du système de logistique.
- * Pour la configuration de l'usine de création, voir le fichier "config_creation_factory.sqf".
- * NOTE IMPORTANTE : lorsqu'une fonctionnalité logistique est accordée à un nom de classe d'objet/véhicule, les classes
- *                   héritant de cette classe mère/générique (selon le CfgVehicles) se verront également dotées de cette fonctionnalité.
+ * Fichier contenant les variables de configuration du systÃ¨me de logistique.
+ * Pour la configuration de l'usine de crÃ©ation, voir le fichier "config_creation_factory.sqf".
+ * NOTE IMPORTANTE : lorsqu'une fonctionnalitÃ© logistique est accordÃ©e Ã  un nom de classe d'objet/vÃ©hicule, les classes
+ *                   hÃ©ritant de cette classe mÃ¨re/gÃ©nÃ©rique (selon le CfgVehicles) se verront Ã©galement dotÃ©es de cette fonctionnalitÃ©.
  *                   Exemple d'arborescence du CfgVehicles : http://madbull.arma.free.fr/A3_stable_1.20.124746_CfgVehicles_tree.html
  */
 
@@ -33,12 +33,12 @@
  * 
  * 
  * (FR)
- * Défini si les objets et véhicules disposent des fonctionnalités logistiques par défaut,
- * ou si elles doivent être autorisés explicitement sur des objets/véhicules spécifiques.
+ * DÃ©fini si les objets et vÃ©hicules disposent des fonctionnalitÃ©s logistiques par dÃ©faut,
+ * ou si elles doivent Ãªtre autorisÃ©s explicitement sur des objets/vÃ©hicules spÃ©cifiques.
  * 
- * Si false : tous les objets sont actifs en accord avec les noms de classes listés dans ce fichier
- *            Vous pouvez désactiver certains objets avec : objet setVariable ["R3F_LOG_disabled", true];
- * Si true :  tous les objets sont inactifs par défaut
+ * Si false : tous les objets sont actifs en accord avec les noms de classes listÃ©s dans ce fichier
+ *            Vous pouvez dÃ©sactiver certains objets avec : objet setVariable ["R3F_LOG_disabled", true];
+ * Si true :  tous les objets sont inactifs par dÃ©faut
  *            Vous pouvez activer quelques objets avec : objet setVariable ["R3F_LOG_disabled", false];
  */
 R3F_LOG_CFG_disabled_by_default = false;
@@ -63,18 +63,18 @@ R3F_LOG_CFG_disabled_by_default = false;
  * See also the config variable R3F_LOG_CFG_unlock_objects_timer.
  * 
  * (FR)
- * Défini le mode de verrouillage des fonctionnalités logistics pour un objet donné.
- * Un objet peut être verrouillé pour une side, une faction, un joueur (respawn) ou une unité (vie).
- * Si l'objet est verrouillé, le joueur peut le déverrouiller en fonction de la
+ * DÃ©fini le mode de verrouillage des fonctionnalitÃ©s logistics pour un objet donnÃ©.
+ * Un objet peut Ãªtre verrouillÃ© pour une side, une faction, un joueur (respawn) ou une unitÃ© (vie).
+ * Si l'objet est verrouillÃ©, le joueur peut le dÃ©verrouiller en fonction de la
  * valeur de la variable de configiration R3F_LOG_CFG_unlock_objects_timer.
  * 
- * Si "none" : pas de verrouillage, tout le monde peut utiliser les fonctionnalités logistiques.
- * Si "side" : l'objet est verrouillé pour la dernière side ayant interagit avec lui.
- * Si "faction" : l'objet est verrouillé pour la dernière faction ayant interagit avec lui.
- * Si "player" : l'objet est verrouillé pour le dernier joueur ayant interagit avec lui. Le verrou est transmis après respawn.
- * Si "unit" : l'objet est verrouillé pour le dernier joueur ayant interagit avec lui. Le verrou est perdu quand l'unité meurt.
+ * Si "none" : pas de verrouillage, tout le monde peut utiliser les fonctionnalitÃ©s logistiques.
+ * Si "side" : l'objet est verrouillÃ© pour la derniÃ¨re side ayant interagit avec lui.
+ * Si "faction" : l'objet est verrouillÃ© pour la derniÃ¨re faction ayant interagit avec lui.
+ * Si "player" : l'objet est verrouillÃ© pour le dernier joueur ayant interagit avec lui. Le verrou est transmis aprÃ¨s respawn.
+ * Si "unit" : l'objet est verrouillÃ© pour le dernier joueur ayant interagit avec lui. Le verrou est perdu quand l'unitÃ© meurt.
  * 
- * Note : pour les objets militaires (non civils), le verrou est initialisé à la side de l'objet.
+ * Note : pour les objets militaires (non civils), le verrou est initialisÃ© Ã  la side de l'objet.
  * 
  * Voir aussi la variable de configiration R3F_LOG_CFG_unlock_objects_timer.
  */
@@ -87,8 +87,8 @@ R3F_LOG_CFG_lock_objects_mode = "none";
  * Set to -1 to deny the unlock of objects.
  * See also the config variable R3F_LOG_CFG_lock_objects_mode.
  * 
- * Défini la durée (en secondes) du compte-à-rebours pour déverrouiller un objet.
- * Mettre à -1 pour qu'on ne puisse pas déverrouiller les objets.
+ * DÃ©fini la durÃ©e (en secondes) du compte-Ã -rebours pour dÃ©verrouiller un objet.
+ * Mettre Ã  -1 pour qu'on ne puisse pas dÃ©verrouiller les objets.
  * Voir aussi la variable de configiration R3F_LOG_CFG_lock_objects_mode.
  */
 R3F_LOG_CFG_unlock_objects_timer = 30;
@@ -99,8 +99,8 @@ R3F_LOG_CFG_unlock_objects_timer = 30;
  * Define if movable objects with no gravity simulation can be set in height over the ground (no ground contact).
  * The no gravity objects corresponds to most of decoration and constructions items.
  * 
- * Défini si les objets déplaçable sans simulation de gravité peuvent être position en hauteur sans être contact avec le sol.
- * Les objets sans gravité correspondent à la plupart des objets de décors et de construction.
+ * DÃ©fini si les objets dÃ©plaÃ§able sans simulation de gravitÃ© peuvent Ãªtre position en hauteur sans Ãªtre contact avec le sol.
+ * Les objets sans gravitÃ© correspondent Ã  la plupart des objets de dÃ©cors et de construction.
  */
 R3F_LOG_CFG_no_gravity_objects_can_be_set_in_height_over_ground = true;
 
@@ -110,8 +110,8 @@ R3F_LOG_CFG_no_gravity_objects_can_be_set_in_height_over_ground = true;
  * Automatic language selection according to the game language.
  * New languages can be easily added (read below).
  * 
- * Sélection automatique de la langue en fonction de la langue du jeu.
- * De nouveaux langages peuvent facilement être ajoutés (voir ci-dessous).
+ * SÃ©lection automatique de la langue en fonction de la langue du jeu.
+ * De nouveaux langages peuvent facilement Ãªtre ajoutÃ©s (voir ci-dessous).
  */
 R3F_LOG_CFG_language = switch (language) do
 {
@@ -148,17 +148,17 @@ R3F_LOG_CFG_language = switch (language) do
  * To allow the logistics to everyone, just set the condition to "true".
  * 
  * (FR)
- * Cette variable permet d'utiliser une condition SQF dynamique pour autoriser ou non les fonctions logistiques sur des clients spécifiques.
- * La variable doit être une CHAINE de caractères délimitée par des guillemets et doit contenir une condition SQF valide qui sera évaluée durant la mission.
- * Par exemple pour autoriser la logistique sur seulement quelques joueurs ayant un ID de jeu connu, la variable peut être défini comme suit :
+ * Cette variable permet d'utiliser une condition SQF dynamique pour autoriser ou non les fonctions logistiques sur des clients spÃ©cifiques.
+ * La variable doit Ãªtre une CHAINE de caractÃ¨res dÃ©limitÃ©e par des guillemets et doit contenir une condition SQF valide qui sera Ã©valuÃ©e durant la mission.
+ * Par exemple pour autoriser la logistique sur seulement quelques joueurs ayant un ID de jeu connu, la variable peut Ãªtre dÃ©fini comme suit :
  * "getPlayerUID player in [""76xxxxxxxxxxxxxxx"", ""76yyyyyyyyyyyyyyy"", ""76zzzzzzzzzzzzzzz""]"
  * Ou elle peut se baser sur le nom de profil : "profileName in [""maxime"", ""martin"", ""marc""]"
  * Ou pour n'autoriser que l'admin de serveur : "serverCommandAvailable "#kick"""
- * Les condition sont évaluées en temps réel, et peuvent donc dépendre du déroulement de la mission : "alive officier && taskState tache1 == ""Succeeded"""
- * Ou pour interdire la logistique dans la zone défini par un marqueur circulaire : "player distance getMarkerPos ""markerName"" > getMarkerSize ""markerName"" select 0"
- * Notez que les guillemets des chaînes de caractères dans la chaîne de condition doivent être doublés.
- * Note : si la condition dépend de l'objet/véhicule pointé, vous pouvez utiliser la commande cursorTarget
- * Pour autoriser la logistique chez tout le monde, il suffit de définir la condition à "true".
+ * Les condition sont Ã©valuÃ©es en temps rÃ©el, et peuvent donc dÃ©pendre du dÃ©roulement de la mission : "alive officier && taskState tache1 == ""Succeeded"""
+ * Ou pour interdire la logistique dans la zone dÃ©fini par un marqueur circulaire : "player distance getMarkerPos ""markerName"" > getMarkerSize ""markerName"" select 0"
+ * Notez que les guillemets des chaÃ®nes de caractÃ¨res dans la chaÃ®ne de condition doivent Ãªtre doublÃ©s.
+ * Note : si la condition dÃ©pend de l'objet/vÃ©hicule pointÃ©, vous pouvez utiliser la commande cursorTarget
+ * Pour autoriser la logistique chez tout le monde, il suffit de dÃ©finir la condition Ã  "true".
  */
 R3F_LOG_CFG_string_condition_allow_logistics_on_this_client = "true";
 
@@ -173,23 +173,23 @@ R3F_LOG_CFG_string_condition_allow_logistics_on_this_client = "true";
  * Or based on the profile name : "profileName in [""john"", ""jack"", ""james""]"
  * Or only for the server admin : "serverCommandAvailable "#kick"""
  * Note that quotes of the strings inside the string condition must be doubled.
- * Note : if the condition depends of the aimed objects/véhicule, you can use the command cursorTarget
+ * Note : if the condition depends of the aimed objects/vÃ©hicule, you can use the command cursorTarget
  * Note also that the condition is evaluted in real time, so it can use condition depending on the mission progress :
  * "alive officer && taskState task1 == ""Succeeded"""
  * To allow the creation factory to everyone, just set the condition to "true".
  * 
  * (FR)
- * Cette variable permet d'utiliser une condition SQF dynamique pour rendre accessible ou non l'usine de création sur des clients spécifiques.
- * La variable doit être une CHAINE de caractères délimitée par des guillemets et doit contenir une condition SQF valide qui sera évaluée durant la mission.
- * Par exemple pour autoriser l'usine de création sur seulement quelques joueurs ayant un ID de jeu connu, la variable peut être défini comme suit :
+ * Cette variable permet d'utiliser une condition SQF dynamique pour rendre accessible ou non l'usine de crÃ©ation sur des clients spÃ©cifiques.
+ * La variable doit Ãªtre une CHAINE de caractÃ¨res dÃ©limitÃ©e par des guillemets et doit contenir une condition SQF valide qui sera Ã©valuÃ©e durant la mission.
+ * Par exemple pour autoriser l'usine de crÃ©ation sur seulement quelques joueurs ayant un ID de jeu connu, la variable peut Ãªtre dÃ©fini comme suit :
  * "getPlayerUID player in [""76xxxxxxxxxxxxxxx"", ""76yyyyyyyyyyyyyyy"", ""76zzzzzzzzzzzzzzz""]"
  * Ou elle peut se baser sur le nom de profil : "profileName in [""maxime"", ""martin"", ""marc""]"
  * Ou pour n'autoriser que l'admin de serveur : "serverCommandAvailable "#kick"""
- * Notez que les guillemets des chaînes de caractères dans la chaîne de condition doivent être doublés.
- * Note : si la condition dépend de l'objet/véhicule pointé, vous pouvez utiliser la commande cursorTarget
- * Notez aussi que les condition sont évaluées en temps réel, et peuvent donc dépendre du déroulement de la mission :
+ * Notez que les guillemets des chaÃ®nes de caractÃ¨res dans la chaÃ®ne de condition doivent Ãªtre doublÃ©s.
+ * Note : si la condition dÃ©pend de l'objet/vÃ©hicule pointÃ©, vous pouvez utiliser la commande cursorTarget
+ * Notez aussi que les condition sont Ã©valuÃ©es en temps rÃ©el, et peuvent donc dÃ©pendre du dÃ©roulement de la mission :
  * "alive officier && taskState tache1 == ""Succeeded"""
- * Pour autoriser l'usine de création chez tout le monde, il suffit de définir la condition à "true".
+ * Pour autoriser l'usine de crÃ©ation chez tout le monde, il suffit de dÃ©finir la condition Ã  "true".
  */
 R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "false";
 
@@ -210,15 +210,15 @@ R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "false";
  * Inheritance tree view : http://madbull.arma.free.fr/A3_1.32_CfgVehicles_tree.html
  * 
  * (FR)
- * Deux moyens existent pour gérer de nouveaux objets avec le système logistique. Le premier consiste à ajouter
- * ces objets dans les listes appropriées ci-dessous. Le deuxième est de créer un fichier externe dans le répertoire
- * /addons_config/ basé sur /addons_config/TEMPLATE.sqf, et d'ajouter un #include ci-dessous.
- * La première méthode est préférable lorsqu'il s'agit d'ajouter ou corriger quelques classes diverses.
- * La deuxième méthode est préférable s'il s'agit de prendre en compte le contenu d'un addon supplémentaire.
+ * Deux moyens existent pour gÃ©rer de nouveaux objets avec le systÃ¨me logistique. Le premier consiste Ã  ajouter
+ * ces objets dans les listes appropriÃ©es ci-dessous. Le deuxiÃ¨me est de crÃ©er un fichier externe dans le rÃ©pertoire
+ * /addons_config/ basÃ© sur /addons_config/TEMPLATE.sqf, et d'ajouter un #include ci-dessous.
+ * La premiÃ¨re mÃ©thode est prÃ©fÃ©rable lorsqu'il s'agit d'ajouter ou corriger quelques classes diverses.
+ * La deuxiÃ¨me mÃ©thode est prÃ©fÃ©rable s'il s'agit de prendre en compte le contenu d'un addon supplÃ©mentaire.
  * 
- * Ces variables sont basées sur le principe d'héritage utilisés dans l'arborescence du CfgVehicles.
- * Cela signifie qu'une fonctionnalité accordée à une classe, le sera aussi pour toutes ses classes filles.
- * Vue de l'arborescence d'héritage : http://madbull.arma.free.fr/A3_1.32_CfgVehicles_tree.html
+ * Ces variables sont basÃ©es sur le principe d'hÃ©ritage utilisÃ©s dans l'arborescence du CfgVehicles.
+ * Cela signifie qu'une fonctionnalitÃ© accordÃ©e Ã  une classe, le sera aussi pour toutes ses classes filles.
+ * Vue de l'arborescence d'hÃ©ritage : http://madbull.arma.free.fr/A3_1.32_CfgVehicles_tree.html
  */
 
 /****** LIST OF ADDONS CONFIG TO INCLUDE / LISTE DES CONFIG D'ADDONS A INCLURE ******/
@@ -231,7 +231,7 @@ R3F_LOG_CFG_string_condition_allow_creation_factory_on_this_client = "false";
 
 /**
  * List of class names of ground vehicles which can tow objects.
- * Liste des noms de classes des véhicules terrestres pouvant remorquer des objets.
+ * Liste des noms de classes des vÃ©hicules terrestres pouvant remorquer des objets.
  */
 R3F_LOG_CFG_can_tow = R3F_LOG_CFG_can_tow +
 [
@@ -349,23 +349,23 @@ R3F_LOG_CFG_can_be_towed = R3F_LOG_CFG_can_be_towed +
 
 /**
  * List of class names of helicopters which can lift objects.
- * Liste des noms de classes des hélicoptères pouvant héliporter des objets.
+ * Liste des noms de classes des hÃ©licoptÃ¨res pouvant hÃ©liporter des objets.
  */
 R3F_LOG_CFG_can_lift = R3F_LOG_CFG_can_lift +
 [
 	// e.g. : "MyLifterVehicleClassName1", "MyLifterVehicleClassName2"
-	
+	// Here comes the Classname for the Chopper can Lift
 	
 ];
 
 /**
  * List of class names of objects which can be lifted.
- * Liste des noms de classes des objets héliportables.
+ * Liste des noms de classes des objets hÃ©liportables.
  */
 R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
 [
 	// e.g. : "MyLiftableObjectClassName1", "MyLiftableObjectClassName2"
-	
+	// Here comes the Classname for the Vehicle which can be Lifted
 	
 ];
 
@@ -379,22 +379,22 @@ R3F_LOG_CFG_can_be_lifted = R3F_LOG_CFG_can_be_lifted +
  * The capacity doesn't represent a real volume or weight, but a choice made for gameplay.
  * 
  * (FR)
- * Cette section utilise une quantification numérique de la capacité et du coût des objets.
- * Par exemple, dans un véhicule d'une capacité de 100, nous pouvons charger 5 objets coûtant 20 unités de capacité.
- * La capacité ne représente ni un poids, ni un volume, mais un choix fait pour la jouabilité.
+ * Cette section utilise une quantification numÃ©rique de la capacitÃ© et du coÃ»t des objets.
+ * Par exemple, dans un vÃ©hicule d'une capacitÃ© de 100, nous pouvons charger 5 objets coÃ»tant 20 unitÃ©s de capacitÃ©.
+ * La capacitÃ© ne reprÃ©sente ni un poids, ni un volume, mais un choix fait pour la jouabilitÃ©.
  */
 
 /**
  * List of class names of vehicles or cargo objects which can transport objects.
  * The second element of the nested arrays is the load capacity (in relation with the capacity cost of the objects).
  * 
- * Liste des noms de classes des véhicules ou "objets contenant" pouvant transporter des objets.
- * Le deuxième élément des sous-tableaux est la capacité de chargement (en relation avec le coût de capacité des objets).
+ * Liste des noms de classes des vÃ©hicules ou "objets contenant" pouvant transporter des objets.
+ * Le deuxiÃ¨me Ã©lÃ©ment des sous-tableaux est la capacitÃ© de chargement (en relation avec le coÃ»t de capacitÃ© des objets).
  */
 R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
 [
 	// e.g. : ["MyTransporterClassName1", itsCapacity], ["MyTransporterClassName2", itsCapacity]
-		
+	// Here Comes the Vehicle which can Load Stuff 	
 ];
 
 /**
@@ -402,12 +402,12 @@ R3F_LOG_CFG_can_transport_cargo = R3F_LOG_CFG_can_transport_cargo +
  * The second element of the nested arrays is the cost capacity (in relation with the capacity of the vehicles).
  * 
  * Liste des noms de classes des objets transportables.
- * Le deuxième élément des sous-tableaux est le coût de capacité (en relation avec la capacité des véhicules).
+ * Le deuxiÃ¨me Ã©lÃ©ment des sous-tableaux est le coÃ»t de capacitÃ© (en relation avec la capacitÃ© des vÃ©hicules).
  */
 R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 [
 	// e.g. : ["MyTransportableObjectClassName1", itsCost], ["MyTransportableObjectClassName2", itsCost]
-	
+	// Here Comes the Stuff what you want to load in the Vehicle  example: ["IG_supplyCrate_F", 40]
 	
 ];
 
@@ -415,10 +415,11 @@ R3F_LOG_CFG_can_be_transported_cargo = R3F_LOG_CFG_can_be_transported_cargo +
 
 /**
  * List of class names of objects which can be carried and moved by a player.
- * Liste des noms de classes des objets qui peuvent être portés et déplacés par le joueur.
+ * Liste des noms de classes des objets qui peuvent Ãªtre portÃ©s et dÃ©placÃ©s par le joueur.
  */
 R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 [
+	// Here Comes that stuff in what a player can Move 
 	// e.g. : "MyMovableObjectClassName1", "MyMovableObjectClassName2"
 	"CargoNet_01_box_F",
 	"Box_NATO_AmmoVeh_F",
