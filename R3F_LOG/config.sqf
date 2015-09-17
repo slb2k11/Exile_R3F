@@ -439,6 +439,12 @@ R3F_LOG_CFG_can_be_moved_by_player = R3F_LOG_CFG_can_be_moved_by_player +
 	"Land_Pod_Heli_Transport_04_box_F",
 	"Land_Pod_Heli_Transport_04_repair_F",
 	"Land_Pod_Heli_Transport_04_medevac_F",
-	"Land_Pod_Heli_Transport_04_bench_F"
+	"Land_Pod_Heli_Transport_04_bench_F",
+	"Land_Pod_Heli_Transport_04_covered_black_F",
+	"Land_Pod_Heli_Transport_04_fuel_black_F",
+	"Land_Pod_Heli_Transport_04_box_black_F",
+	"Land_Pod_Heli_Transport_04_repair_black_F",
+	"Land_Pod_Heli_Transport_04_medevac_black_F",
+	"Land_Pod_Heli_Transport_04_bench_black_F"
 	
 ];
